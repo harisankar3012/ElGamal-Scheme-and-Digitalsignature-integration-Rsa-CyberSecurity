@@ -1,0 +1,55 @@
+<Html>  
+	<Head>
+		<title>RSA Ecnryption</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+	</Head>
+
+	<Body> 
+	<fieldset> 
+		<header id="header">
+				<h1><p style="font-size: 50px ;" align="center">RSA Ecnryption</p></h1>
+				<hr>
+		</header>
+		
+		<div class="jumbotron" style="width: 50%; margin-left:25%">			 
+			<form >
+				<div class="form-group">
+					Generating your public / private key-pairs now . . .<br>
+					  
+					{% if a %}
+						<p>Your public key is: {{a}}</p>
+			        {% endif%}
+					
+					{% if b %}
+						<p>Your private key is: {{b}}</p>
+			        {% endif%}
+					
+					{% if c %}
+						<p>Your Encrypted message is: {{c}}</p>
+			        {% endif%}
+					
+					{% if b %}
+						<p>Decrypting message with private key{{b}}</p>
+			        {% endif%}
+					
+					{% if ram %}
+						<p>Decrypting message with private key:  {{ram}}</p>
+			        {% endif%}
+					
+				</div>
+				
+				<button type="submit" class="btn btn-primary" value="submit">Submit</button>
+			</form>
+		</div>
+		</fieldset>
+	
+	</Body>
+</Html>
+
+ 

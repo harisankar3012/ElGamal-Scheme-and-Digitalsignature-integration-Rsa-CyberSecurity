@@ -1,0 +1,43 @@
+<Html>  
+	<Head>
+		<title>Home</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+	</Head>
+
+	<Body> 
+	<fieldset> 
+		<header id="header">
+				<h1><p style="font-size: 50px ;" align="center">Elgamal</p></h1>
+				<hr>
+		</header>
+		
+		<div class="jumbotron" style="width: 50%; margin-left:25%">
+			<div class = "desc">
+			{% if data %}
+			{% for x in data %}
+			<p> <strong>{{ x }} : </strong>  {{data[x]}} </p>
+			
+			
+			{% endfor %}
+			{% endif %}
+			</div>
+			<form action = "/encrypt" method = "post">
+				<div class="form-group">
+					<label for="message">Message:</label>
+					<input type="text" class="form-control" id="text" placeholder="Enter message" name="input_message">
+				</div>
+				<button type="submit" class="btn btn-primary" value="submit">Submit</button>
+			</form>
+		</div>
+		</fieldset>
+	
+	</Body>
+</Html>
+
+ 
