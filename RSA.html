@@ -1,0 +1,42 @@
+<Html>  
+	<Head>
+		<title>RSA</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
+	</Head>
+
+	<Body> 
+	<fieldset> 
+		<header id="header">
+				<h1><p style="font-size: 50px ;" align="center">RSA</p></h1>
+				<hr>
+		</header>
+		
+		<div class="jumbotron" style="width: 50%; margin-left:25%">			 
+			<form action = "/rsaa" method="POST" >
+				<div class="form-group">
+					<label for="number">Enter a prime number (17, 19, 23, etc): </label>
+					<input type="number" class="form-control" id="number" placeholder="Enter a prime number1" name="prime_number1">
+					<br>
+					<label for="number">Enter another prime number (Not one you entered above): </label>
+					<input type="number" class="form-control" id="number" placeholder="Enter a prime number2" name="prime_number2">
+					<br>
+					<label for="number">Enter a message to encrypt with your public key: </label>
+					<input type="text" class="form-control" id="text" placeholder="message" name="message1">
+					<br>
+				</div>
+				
+				<button type="submit" class="btn btn-primary" value="submit">Submit</button>
+			</form>
+		</div>
+		</fieldset>
+	
+	</Body>
+</Html>
+
+ 
